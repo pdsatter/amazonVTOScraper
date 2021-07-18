@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h1>Amazon Time Skimmer</h1>
+    How to: Input selected fields, log in, then let it run in background.  It will automatically do the rest.  If
+    selected VTO or VET comes up, then it will be accepted automatically.
+    <br>
+    <br>
+    <select>
+        <option value="VTO">VTO</option>
+        <option value="VET">VET</option>
+    </select>
+    <br>
+    <form>
+        <label for="DateSelected">Date (mm/dd/yyyy): </label>
+        <input type="date" id="selectedDate" name="selectedDate">Pick a date: </input>
+        <br>
+        <label for="timeSelection">Shift start time: </label>
+        <select>
+            <option value="03:00">03:00</option>
+            <option value="09:00">09:00</option>
+            <option value="14:30">14:30</option>
+            <option value="20:00">20:00</option>
+            <option value="22:30">22:30</option>
+        </select>
+
+    </form>
+{% endblock %}
